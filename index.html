@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เกมทายวันเกิด</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="bg-gradient-to-br from-green-200 via-white to-green-200 min-h-screen flex flex-col items-center justify-center">
+
+  <!-- Header -->
+  <div class="text-center mb-10">
+    <h1 class="text-5xl font-extrabold text-green-700 mb-4 animate-pulse">เกมทายวันเกิด 🎉</h1>
+    <p class="text-lg text-gray-700 font-medium">
+      เลือกการ์ดที่มีวันเกิดของคุณ แล้วพ่อหมอสมคิดจะทายวันเกิดให้คุณเอง!
+    </p>
+  </div>
+
+  <!-- Card Section -->
+  <div id="cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10 w-10/12">
+    <!-- การ์ดจะถูกเพิ่มผ่าน JavaScript -->
+  </div>
+
+  <!-- Buttons -->
+  <div class="flex space-x-4">
+    <button
+      onclick="guessBirthday()"
+      class="px-8 py-3 bg-green-500 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-green-600 hover:scale-105 transition-transform duration-300"
+    >
+      ทายวันเกิดของคุณ
+    </button>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
